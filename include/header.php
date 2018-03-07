@@ -1,5 +1,5 @@
 <?php
-$page = basename($_SERVER['PHP_SELF']);
+require_once "functions.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,8 +9,8 @@ $page = basename($_SERVER['PHP_SELF']);
     <title></title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-</head>
-<body role="document">
+    </head>
+    <body role="document">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -18,10 +18,10 @@ $page = basename($_SERVER['PHP_SELF']);
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li <?php if($page == 'index.php'){ echo 'class="active"';}?>><a href="index.php">Teletubbies</a></li>
-                    <li <?php if($page == 'kittens.php'){ echo 'class="active"';}?>><a href="kittens.php">Kittens</a></li>
-                    <li <?php if($page == 'ironmaiden.php'){ echo 'class="active"';}?>><a href="ironmaiden.php">Iron Maiden</a></li>
-                    <li <?php if($page == 'jpp.php'){ echo 'class="active"';}?>><a href="jpp.php">J-P</a></li>
+                    <?php addActive('index.php', 'Teketubbies')?>
+                    <?php addActive('kittens.php', 'chatonse')?>
+                    <?php addActive('ironmaiden.php', 'IronMaideeeeennn')?>
+                    <?php addActive('jpp.php', 'Jean Pierre <3')?>
                 </ul>
             </div>
         </div>

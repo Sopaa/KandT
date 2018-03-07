@@ -1,4 +1,4 @@
-<?php include "incluse/header.php"; ?>
+<?php include "include/header.php"; ?>
 
 
 <div class="container theme-showcase" role="main">
@@ -11,4 +11,4 @@
 </div>
 
 
-<?php include "incluse/footer.php" ?>
+<?php include "include/footer.php" ?>
