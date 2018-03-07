@@ -1,5 +1,5 @@
 <?php
-include "incluse/header.php";
+include "include/header.php";
 ?>
 
 <div class="container theme-showcase" role="main">
@@ -11,5 +11,5 @@ include "incluse/header.php";
     <img class="img-thumbnail" alt="Teletubbies" src="img/jpp.jpeg" data-holder-rendered="true">
 </div>
 <?php
-include "incluse/footer.php"
+include "include/footer.php"
 ?>
